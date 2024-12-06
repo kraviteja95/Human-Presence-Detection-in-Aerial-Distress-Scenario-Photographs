@@ -1,0 +1,10 @@
+# Paths to dataset directories
+train: /content/drive/MyDrive/MS_in_AAI/Courses_and_Projects/AAI-521_CV/AAI-521_Final_Team_Project/CV_Datasets/C2A_Dataset/C2A_Dataset/new_dataset3/train/images
+val: /content/drive/MyDrive/MS_in_AAI/Courses_and_Projects/AAI-521_CV/AAI-521_Final_Team_Project/CV_Datasets/C2A_Dataset/C2A_Dataset/new_dataset3/val/images
+test: /content/drive/MyDrive/MS_in_AAI/Courses_and_Projects/AAI-521_CV/AAI-521_Final_Team_Project/CV_Datasets/C2A_Dataset/C2A_Dataset/new_dataset3/test/images
+
+# Number of classes
+nc: 1
+
+# class names
+names: ['person']
