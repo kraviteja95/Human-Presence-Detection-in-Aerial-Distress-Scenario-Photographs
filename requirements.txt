@@ -1,0 +1,17 @@
+ultralytics
+ipywidgets
+opencv-python
+tensorflow
+torch
+torchvision
+pandas
+numpy
+jupyter
+notebook
+tqdm
+joblib
+scipy
+scikit-image
+scikit-learn
+starlette
+seaborn
