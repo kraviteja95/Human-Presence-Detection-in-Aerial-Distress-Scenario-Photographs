@@ -168,7 +168,7 @@ jupyter lab
 
 ## Dataset Preprocessing
 
-- Step-1: Initial Preprocessing of C2A Dataset
+- Step-1: Initial Preprocessing of C2A Dataset (do this step alone in your local system).
   - Click (Single click or double click whatever works) on the `c2a_dataset_image_preprocessing.ipynb` file.
   - You will notice the file opened.
   - Update the `images_base_path` variable with proper C2A Dataset path.
@@ -179,7 +179,7 @@ jupyter lab
 - Step-2: Denoise the Images in C2A Dataset
   - Click (Single click or double click whatever works) on the `C2A_Dataset_Images_Denoising.ipynb` file.
   - You will notice the file opened.
-  - Make sure you mount your Google Drive account.
+  - Take this file to Google Colab and make sure you mount your Google Drive account.
   - Update the `input_folder` variable with proper C2A Dataset train images path and `output_folder` with proper path to save the denoised images.
   - Click `Run` button from the Menu bar and select the option of your interest (`Run Cell` or `Run All` button).
   - You can look at the execution results within the file and interpret accordingly.
@@ -187,7 +187,7 @@ jupyter lab
 - Step-3: Denoise the Images in the Created Synthetic Dataset
   - Click (Single click or double click whatever works) on the `Denoising_Custom_Dataset_Images.ipynb` file.
   - You will notice the file opened.
-  - Make sure you mount your Google Drive account.
+  - Take this file to Google Colab and make sure you mount your Google Drive account.
   - Update the `input_folder` variable with proper C2A Dataset train images path and `output_folder` with proper path to save the denoised images.
   - Click `Run` button from the Menu bar and select the option of your interest (`Run Cell` or `Run All` button).
   - You can look at the execution results within the file and interpret accordingly.
