@@ -64,7 +64,13 @@ The effectiveness of search and rescue missions from disaster scenarios such as 
 
 # Requirements of this Project
 - **Considered Data Mesaures:** The following image depicts the measures we took to achieve the goal of this project.
-  ![img.png](img.png)
+  
+  | Dataset           | Variety                                                                 | Preprocessing Needed                                                                         | Rawness                                                                                     | Usability for Victim Detection                                           |
+  |--------------------|------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+  | C2A               | Variety of disaster images with artificial human silhouette pre-embedded | Image resizing will be needed to bring all the images to uniform dimension.                | Usable for training for human detection application                                       | Focused on humans, with annotation to validate the model output|
+  | Custom Dataset made from AIDER + UAV-Human | AIDER provides five different disaster backgrounds. UAV-Human provides 11,805 human poses as viewed from UAV | Custom developed engine to randomly overlay humans on the background and to generate annotation | The custom-generated data has actual humans in the background, aiding better feature learning | Focused on actual humans in the disaster environment for better learning|
+
+
 - We followed 2 stages of finetuning.
   - C2A is used for initial fine tuning of the model and pruning the model architecture as it is a light-weight dataset with human centric focus.
   - Custom dataset from (AIDER+UAV-Human overlay) has more realistic human images and annotation over disaster background. Hence, this will be used for second level fine tuning.
