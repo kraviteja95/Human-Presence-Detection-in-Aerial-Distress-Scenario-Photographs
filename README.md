@@ -214,7 +214,7 @@ jupyter lab
 
     !unzip "{give your Google Drive folder path here}/C2A_Dataset.zip" -d "{give your Google Drive folder path here}/C2A_Dataset"
     ```
-  - Wait for sometime after executing these steps. Then go inside the path in your Google Drive and ensure your dataset is visible in it Refer [this](https://drive.google.com/drive/folders/1BYrmnt_NF8o8sGeItjliYq8fl1GYeMk8?usp=sharing) to understand how the created dataset structure looks like.
+  - Wait for sometime after executing these steps. Then go inside the path in your Google Drive and ensure your dataset is visible in it Refer [this](https://drive.google.com/drive/folders/1--bTru0oVSulGZr9huJ5kF9vinU0O4Sa?usp=sharing) to understand how the created dataset structure looks like.
 
 - Step-3: Fine-tune YOLOv7 models using the C2A and created Synthetic Datasets. 
 
