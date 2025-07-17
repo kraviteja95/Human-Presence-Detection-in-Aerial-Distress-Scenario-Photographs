@@ -125,20 +125,20 @@ The effectiveness of search and rescue missions from disaster scenarios such as 
 # Usage Instructions in Local System and Google Colab
 - Clone using HTTPS
 ```commandline
-https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs.git
+https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs.git
 ```
 OR - 
 
 - Clone using SSH
 ```commandline
-git@github.com:MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs.git
+git@github.com:kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs.git
 ```
 
 OR -
 
 - Clone using GitHub CLI
 ```commandline
-gh repo clone MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs
+gh repo clone kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs
 ```
  
 - Switch inside the Project Directory
@@ -197,13 +197,13 @@ jupyter lab
 
 - Step-1: Create a Synthetic Dataset using AIDER Dataset and HUMAN Images.
   - Upload the AIDER and HUMAN images datasets to your Google Drive. You can take [this](https://drive.google.com/file/d/1im8K5qkV-8u-LqruvuFQ7NSQaoZbRScN/view?usp=sharing) and [this](https://drive.google.com/file/d/1mr0GUhlVtoW_WMkEEG_wkopTF6QJXtKx/view?usp=sharing) as reference.
-  - Open the [Custom_AIDER_and_Human_Dataset.ipynb](https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/Generated_Custom_AIDER_and_Human_Dataset/Custom_AIDER_and_Human_Dataset.ipynb) file into Google Colab. 
+  - Open the [Custom_AIDER_and_Human_Dataset.ipynb](https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/Generated_Custom_AIDER_and_Human_Dataset/Custom_AIDER_and_Human_Dataset.ipynb) file into Google Colab. 
     - In `!unzip <</content/drive/MyDrive/human.zip>> -d /content/human` and ` !unzip <</content/drive/MyDrive/AIDER.zip>> -d /content/AIDER` steps, give the correct path of your HUMAN images and AIDER images. Don't change the destinations.
     - Except the last cell of the file, execute the entire file after updating the above items.
     - Now, update `drive_output_dir` with proper Google Drive path of your interest in the last cell of the file, and execute this as well.
     - Wait for sometime after executing these steps. Then go inside the path in your Google Drive and ensure your dataset is visible in it.
 
-- Step-2: Download the C2A Dataset from Kaggle and Unzip it. Refer [Download_Dataset_from_Kaggle_and_Unzip.ipynb](https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/Download_Datasets_and_Unzip/Download_Dataset_from_Kaggle_and_Unzip.ipynb) for better understanding.
+- Step-2: Download the C2A Dataset from Kaggle and Unzip it. Refer [Download_Dataset_from_Kaggle_and_Unzip.ipynb](https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/Download_Datasets_and_Unzip/Download_Dataset_from_Kaggle_and_Unzip.ipynb) for better understanding.
   - Create a folder at the path of your interest in your Google Drive.
   - Open a Google Colab Notebook and execute the following steps to do the same:
     ```
@@ -221,8 +221,8 @@ jupyter lab
   ***This will explain you how to Fine-tune the YOLOv7 model using the C2A train dataset and again fine-tuning the resultant model with the created synthetic train dataset.***
   
   - Ensure step-1 is successful before executing this.   
-  - Take the [Yolov7_C2A_Custom.ipynb](https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_and_CustomNewData_Yolo_v7/Yolov7_C2A_Custom.ipynb) file and open in your Google Colab.
-  - Take the [data.yaml](https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_and_CustomNewData_Yolo_v7/data.yaml) and [data_C2A.yaml](https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_and_CustomNewData_Yolo_v7/data_C2A.yaml) files into your local system.
+  - Take the [Yolov7_C2A_Custom.ipynb](https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_and_CustomNewData_Yolo_v7/Yolov7_C2A_Custom.ipynb) file and open in your Google Colab.
+  - Take the [data.yaml](https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_and_CustomNewData_Yolo_v7/data.yaml) and [data_C2A.yaml](https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_and_CustomNewData_Yolo_v7/data_C2A.yaml) files into your local system.
   - Update the following values in `data.yaml` file:
     - ```
       # Paths to dataset directories
@@ -261,9 +261,9 @@ jupyter lab
     - Model weights are available inside `train/yolov7/weights` and `train/yolov72/weights`. Accordingly, you can view the results obtained for your execution as well. Take [this](https://drive.google.com/drive/folders/1VkneXThQ74QsMTOCyzmeQaDDnpStbLtN?usp=sharing) as reference.
 
 - Step-4: Fine-tune YOLOv7 using the C2A train dataset.
-  - Take the [c2a-using-yolov7-base.ipynb](https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_training_using_yolov7_base/c2a-using-yolov7-base.ipynb) file and open it in your **Kaggle account**.
+  - Take the [c2a-using-yolov7-base.ipynb](https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_training_using_yolov7_base/c2a-using-yolov7-base.ipynb) file and open it in your **Kaggle account**.
   - At the right-side of your Kaggle notebook, you will have an option to select the dataset. Click the corresponding dropdown and load the C2A dataset from there.
-  - Take the [data_c2a_using_yolov7.yaml](https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_training_using_yolov7_base/data_c2a_using_yolov7.yaml) file to your local system.
+  - Take the [data_c2a_using_yolov7.yaml](https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_training_using_yolov7_base/data_c2a_using_yolov7.yaml) file to your local system.
   - Update the following values in this file:
     - ```
       # Paths to dataset directories
@@ -286,9 +286,9 @@ jupyter lab
     - After validating the fine-tuned images while executing the code, all the detected humans related images will be visible [here](https://drive.google.com/drive/folders/1ywi_hcMYIn1Nf2PLVHpAYsnkT-dMPr-O?usp=sharing).
 
 - Step-5: Fine-tune YOLOv9c using the C2A train dataset.
-  - Take the [c2a_using_yolov9c_base.ipynb](https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_training_using_yolov9c_base/c2a_using_yolov9c_base.ipynb) file and open it in your Google Colab.
+  - Take the [c2a_using_yolov9c_base.ipynb](https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_training_using_yolov9c_base/c2a_using_yolov9c_base.ipynb) file and open it in your Google Colab.
   - At the right-side of your Kaggle notebook, you will have an option to select the dataset. Click the corresponding dropdown and load the C2A dataset from there.
-  - Take the [data.yaml](https://github.com/MNiazM/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_training_using_yolov9c_base/data.yaml) file to your local system.
+  - Take the [data.yaml](https://github.com/kraviteja95/Human-Presence-Detection-in-Aerial-Distress-Scenario-Photographs/blob/main/C2A_training_using_yolov9c_base/data.yaml) file to your local system.
   - Update the following values in this file:
     - ```
       # Paths to dataset directories
@@ -323,11 +323,10 @@ jupyter lab
 ----------------------------------------------
 
 # Authors
-| Author            | Contact Details       |
-|-------------------|-----------------------|
-| Mohamed Niaz M    | mniazm@sandiego.edu   |
-| Ravi Teja Kothuru | rkothuru@sandiego.edu |
-| Shruthi AK        | sak@sandiego.edu      |
+| Author            |
+|-------------------|
+| Ravi Teja Kothuru |
+
 ----------------------------------------------
 
 # References
